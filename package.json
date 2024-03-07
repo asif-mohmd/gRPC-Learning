@@ -5,6 +5,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "start-degree": "node ./degree/main.js",
+    "start-processor": "node ./process/main.js",
+   "start": "concurrently 'npm run start-degree' 'npm run start-processor'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
