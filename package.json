@@ -6,8 +6,9 @@
   "scripts": {
     "start-degree": "node ./degree/main.js",
     "start-processor": "node ./process/main.js",
-   "start": "concurrently 'npm run start-degree' 'npm run start-processor'"
- },
+    "start-main": "node ./main/main.js",
+    "start": "concurrently \"npm run start-degree\" \"npm run start-processor\" \"npm run start-main\" "
+   },
   "author": "",
   "license": "ISC",
   "dependencies": {
